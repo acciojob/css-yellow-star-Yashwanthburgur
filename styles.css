@@ -1,1 +1,22 @@
-/*  your css code here. If applicable */
+
+.star-first {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 85px solid yellow; /* 100 * √3/2 for equilateral triangle */
+    top: 0;
+    left: 0;
+}
+
+.star-second {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 85px solid yellow;
+    top: 25px; /* Adjust this to perfectly center the triangles */
+    left: 0;
+}
