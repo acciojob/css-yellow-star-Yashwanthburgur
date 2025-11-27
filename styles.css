@@ -1,35 +1,14 @@
 .star {
-    position: relative;
+    font-size: 100px;
+    color: yellow;
     display: inline-block;
-    width: 0;
-    height: 0;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid yellow;
-    border-left: 100px solid transparent;
-    transform: rotate(35deg) scale(0.5);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
 }
 
-.star:before, .star:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-}
-
-.star:before {
-    top: -45px;
-    left: -65px;
-    border-width: 0 30px 80px 30px;
-    border-color: transparent transparent yellow transparent;
-    transform: rotate(-35deg);
-}
-
-.star:after {
-    top: 3px;
-    left: -105px;
-    border-width: 0 100px 70px 100px;
-    border-color: transparent transparent yellow transparent;
-    transform: rotate(-70deg);
+.star::before {
+    content: "★";
+    font-size: 100px;
 }
